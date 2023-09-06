@@ -6,6 +6,7 @@ Java RESTful API para a Santander Dev Week.
 ```mermaid
 classDiagram
     class User {
+        - id: long
         - name: string
         - account: Account
         - features: Feature[]
@@ -14,6 +15,7 @@ classDiagram
     }
 
     class Account {
+        - id: long
         - number: string
         - agency: string
         - balance: float
@@ -21,16 +23,19 @@ classDiagram
     }
 
     class Feature {
+        - id: long
         - icon: string
         - description: string
     }
 
     class Card {
+        - id: long
         - number: string
         - limit: float
     }
 
     class News {
+        - id: long
         - icon: string
         - description: string
     }
